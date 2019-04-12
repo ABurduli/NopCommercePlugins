@@ -1,0 +1,67 @@
+﻿@using Nop.Web.Framework;
+@using System.Linq;
+@using Nop.Web.Framework.UI;
+
+@model Nop.Plugin.Widget.SalesReporting.Models.ReportDatesModel
+@{
+    Layout = "_AdminLayout.cshtml";
+}
+<div class="content-header clearfix">
+    <h1 class="pull-left">
+        Sales Detailed
+    </h1>
+    
+</div>
+
+
+<form method="post" action="@Url.Action("AllSales")">
+
+    <div class="content">
+        <div class="form-horizontal">
+            <div class="panel-group">
+                <div class="panel panel-default panel-search">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="form-group">
+                                    <div class="col-md-4">
+                                        @Html.NopLabelFor(model => model.StartDate)
+                                    </div>
+                                    <div class="col-md-8">
+                                        @Html.NopEditorFor(model => model.StartDate)
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-4">
+                                        @Html.NopLabelFor(model => model.EndDate)
+                                    </div>
+                                    <div class="col-md-8">
+                                        @Html.NopEditorFor(model => model.EndDate)
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-md-4">
+                                        @Html.NopLabelFor(model => model.OnlyHeaders)
+                                    </div>
+                                    <div class="col-md-8">
+                                        @Html.NopEditorFor(model => model.OnlyHeaders)
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7 col-md-offset-5">
+                                <input type="submit" value="Export" />
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</form>
+
+

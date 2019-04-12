@@ -1,0 +1,9 @@
+﻿Group: Widgets
+FriendlyName: Sales Reporting
+SystemName: Widget.SalesReporting
+Version: 1.0
+SupportedVersions: 3.90
+Author: Archil Burduli
+DisplayOrder: 1
+FileName: Nop.Plugin.Widget.SalesReporting.dll
+Description: Sales Reporting

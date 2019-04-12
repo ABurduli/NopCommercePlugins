@@ -1,0 +1,261 @@
+﻿@{
+    Layout = "";
+}
+@model Nop.Plugin.SMS.Notifications.Models.SMSConfigurationModel
+@using Nop.Web.Framework;
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.Enabled)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.Enabled)
+                        @Html.ValidationMessageFor(model => model.Enabled)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.SMSServiceURL)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.SMSServiceURL)
+                        @Html.ValidationMessageFor(model => model.SMSServiceURL)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.SecondLanguageID)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.SecondLanguageID)
+                        @Html.ValidationMessageFor(model => model.SecondLanguageID)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.ThirdLanguageID)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.ThirdLanguageID)
+                        @Html.ValidationMessageFor(model => model.ThirdLanguageID)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.IgnnoreUserIDs)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.IgnnoreUserIDs)
+                        @Html.ValidationMessageFor(model => model.IgnnoreUserIDs)
+                    </div>
+                </div>
+
+
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.EnableOrderPlaced)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.EnableOrderPlaced)
+                        @Html.ValidationMessageFor(model => model.EnableOrderPlaced)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.TemplateOrderPlaced)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.TemplateOrderPlaced)
+                        @Html.ValidationMessageFor(model => model.TemplateOrderPlaced)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.TemplateOrderPlaced2)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.TemplateOrderPlaced2)
+                        @Html.ValidationMessageFor(model => model.TemplateOrderPlaced2)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.TemplateOrderPlaced3)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.TemplateOrderPlaced3)
+                        @Html.ValidationMessageFor(model => model.TemplateOrderPlaced3)
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.EnableOrderCanceled)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.EnableOrderCanceled)
+                        @Html.ValidationMessageFor(model => model.EnableOrderCanceled)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.TemplateOrderCanceled)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.TemplateOrderCanceled)
+                        @Html.ValidationMessageFor(model => model.TemplateOrderCanceled)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.TemplateOrderCanceled2)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.TemplateOrderCanceled2)
+                        @Html.ValidationMessageFor(model => model.TemplateOrderCanceled2)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.TemplateOrderCanceled3)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.TemplateOrderCanceled3)
+                        @Html.ValidationMessageFor(model => model.TemplateOrderCanceled3)
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.EnableOrderPayed)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.EnableOrderPayed)
+                        @Html.ValidationMessageFor(model => model.EnableOrderPayed)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.TemplateOrderPayed)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.TemplateOrderPayed)
+                        @Html.ValidationMessageFor(model => model.TemplateOrderPayed)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.TemplateOrderPayed2)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.TemplateOrderPayed2)
+                        @Html.ValidationMessageFor(model => model.TemplateOrderPayed2)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.TemplateOrderPayed3)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.TemplateOrderPayed3)
+                        @Html.ValidationMessageFor(model => model.TemplateOrderPayed3)
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.EnableShippingShipped)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.EnableShippingShipped)
+                        @Html.ValidationMessageFor(model => model.EnableShippingShipped)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.TemplateShippingShipped)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.TemplateShippingShipped)
+                        @Html.ValidationMessageFor(model => model.TemplateShippingShipped)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.TemplateShippingShipped2)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.TemplateShippingShipped2)
+                        @Html.ValidationMessageFor(model => model.TemplateShippingShipped2)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.TemplateShippingShipped3)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.TemplateShippingShipped3)
+                        @Html.ValidationMessageFor(model => model.TemplateShippingShipped3)
+                    </div>
+                </div>
+
+
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        &nbsp;
+                    </div>
+                    <div class="col-md-9">
+                        <input type="submit" name="save" class="btn bg-blue" value="Save" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Enter phone number to send test SMS
+            </div>
+            <div class="panel-body">
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.TestPhoneNumber)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.TestPhoneNumber)
+                        @Html.ValidationMessageFor(model => model.TestPhoneNumber)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        &nbsp;
+                    </div>
+                    <div class="col-md-9">
+                        <input type="submit" name="test-sms" class="k-button" value="Send Test SMS"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

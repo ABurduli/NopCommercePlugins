@@ -1,0 +1,9 @@
+﻿Group: SMS providers
+FriendlyName: SMS Notifications
+SystemName: SMS.Notifications
+Version: 1.0
+SupportedVersions: 3.90
+Author: Archil Burduli
+DisplayOrder: 1
+FileName: Nop.Plugin.SMS.Notifications.dll
+Description: supports notifications about order statuses an shipping.

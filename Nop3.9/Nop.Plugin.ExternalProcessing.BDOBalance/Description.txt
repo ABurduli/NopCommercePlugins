@@ -1,0 +1,9 @@
+﻿Group: ERP Sync
+FriendlyName: BDO Balance sync
+SystemName: ExternalProcessing.BDOBalance
+Version: 1.0
+SupportedVersions: 3.90
+Author: Archil Burduli
+DisplayOrder: 1
+FileName: Nop.Plugin.ExternalProcessing.BDOBalance.dll
+Description: BDO Balance sync

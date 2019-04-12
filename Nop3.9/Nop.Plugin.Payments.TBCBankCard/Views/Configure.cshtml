@@ -1,0 +1,93 @@
+﻿@{
+    Layout = "";
+}
+@model Nop.Plugin.Payments.TBCBankCard.Models.ConfigurationModel
+@using Nop.Web.Framework;
+
+@Html.Action("StoreScopeConfiguration", "Setting", new { area = "Admin" })
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-body">
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.ServiceURL)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.ServiceURL)
+                        @Html.ValidationMessageFor(model => model.ServiceURL)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.RedirectURL)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.RedirectURL)
+                        @Html.ValidationMessageFor(model => model.RedirectURL)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.CertificatePath)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.CertificatePath)
+                        @Html.ValidationMessageFor(model => model.CertificatePath)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.SecretPass)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.SecretPass)
+                        @Html.ValidationMessageFor(model => model.SecretPass)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.PaymentDescription)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.PaymentDescription)
+                        @Html.ValidationMessageFor(model => model.PaymentDescription)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.CurrencyCode)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.CurrencyCode)
+                        @Html.ValidationMessageFor(model => model.CurrencyCode)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.EnableDebugLogging)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.EnableDebugLogging)
+                        @Html.ValidationMessageFor(model => model.EnableDebugLogging)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        &nbsp;
+                    </div>
+                    <div class="col-md-9">
+                        <input type="submit" name="save" class="btn bg-blue" value="@T("Admin.Common.Save")" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

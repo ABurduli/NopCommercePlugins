@@ -1,0 +1,94 @@
+﻿@{
+    Layout = "~/Views/Shared/_ColumnsOne.cshtml";
+}
+@model Nop.Plugin.Payments.TBCBankCard.Models.PaymentResultModel
+@using Nop.Web.Framework;
+
+@{
+    var revenue = Model.total;
+
+    string FBprodId = "";
+    try
+    {
+        var orderService = Nop.Core.Infrastructure.EngineContext.Current.Resolve<Nop.Services.Orders.IOrderService>();
+        var order = orderService.GetOrderById(Model.OrderId);
+
+        foreach (var i in order.OrderItems)
+        {
+            if (string.IsNullOrEmpty(FBprodId))
+            {
+                FBprodId = "'" + i.Product.Id.ToString() + "'";
+            }
+            else
+            {
+                FBprodId += ",'" + i.Product.Id.ToString() + "'";
+            }
+        }
+    }
+    catch { }
+
+}
+<script>
+    fbq('track', 'Purchase', {
+        content_ids: [@Html.Raw(FBprodId)],
+        content_type: 'product',
+    value: @Model.total,
+    currency: 'GEL',
+  });
+</script>
+
+<script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-110409566-1']);
+        _gaq.push(['_trackPageview']);
+        _gaq.push(["_addTrans",
+            "@Model.OrderId",   // transaction ID - required
+            "FishMarket",  // affiliation or store name
+            "@revenue",  // total - required
+            "0",   // tax
+            "0",  // shipping
+            "Tbilisi",   // city
+            "GE", // state or province
+            "Georgia" // country
+        ]);
+
+        @foreach (var i in Model.items)
+         {
+               @:_gaq.push(["_addItem", "@Model.OrderId", "@i.SKU", "@i.Product", "Seafood", "@i.UnitPrice", "@i.quantity"]);
+         }
+
+        _gaq.push(['_trackTrans']); //submits transaction to the Analytics servers
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+</script>
+
+
+
+
+<div class="page topic-page" id="ph-topic">
+    <div class="page-title" id="ph-title">
+        <h1>@T("fishmarket.paymentstatus")</h1>
+    </div>
+    <div class="page-body">
+        @if (Model.PaymentSucess)
+        {
+            <h1>@T("fishmarket.paymentOK")</h1><br />
+            <h1>Order#@Model.OrderId ressult: @Model.PaymentResultText</h1>
+        }
+        else
+        {
+            <h1>@T("fishmarket.paymentError")</h1><br />
+            <h1>Order#@Model.OrderId ressult: @Model.PaymentResultText</h1>
+        }
+        <br />
+        <a class="button-2 order-details-button" href="@Url.Action("History","Order")"><h2> @T("Account.CustomerOrders")</h2></a>
+    </div>
+
+</div>
+

@@ -1,0 +1,9 @@
+﻿Group: Discount requirements
+FriendlyName: Discount if customer was order
+SystemName: DiscountRequirement.WasOrder
+Version: 1.0
+SupportedVersions: 3.90
+Author: Archil Burduli
+DisplayOrder: 1
+FileName: Nop.Plugin.DiscountRules.WasOrder.dll
+Description: This plugin allows you to configure discounts if Customer was order.

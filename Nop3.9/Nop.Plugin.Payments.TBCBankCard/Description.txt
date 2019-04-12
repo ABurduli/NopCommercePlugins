@@ -1,0 +1,9 @@
+﻿Group: Payment methods
+FriendlyName: TBC Bank Card
+SystemName: Payments.TBCBankCard
+Version: 1.0
+SupportedVersions: 3.90
+Author: Archil Burduli
+DisplayOrder: 1
+FileName: Nop.Plugin.Payments.TBCBankCard.dll
+Description: This plugin allows paying with TBC Bank portal

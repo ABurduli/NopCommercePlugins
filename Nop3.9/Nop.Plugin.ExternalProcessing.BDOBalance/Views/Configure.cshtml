@@ -1,0 +1,104 @@
+﻿@{
+    Layout = "";
+}
+@model Nop.Plugin.ExternalProcessing.BDOBalance.Models.ConfigurationModel
+@using Nop.Web.Framework;
+
+@Html.Action("StoreScopeConfiguration", "Setting", new { area = "Admin" })
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                BDO Balance Service configuration
+            </div>
+            <div class="panel-body">
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.BalanceServiceURL)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.BalanceServiceURL)
+                        @Html.ValidationMessageFor(model => model.BalanceServiceURL)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.BalanceUserName)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.BalanceUserName)
+                        @Html.ValidationMessageFor(model => model.BalanceUserName)
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.BalanceUserPass)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.BalanceUserPass)
+                        @Html.ValidationMessageFor(model => model.BalanceUserPass)
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.DownloadQuanity)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.DownloadQuanity)
+                        @Html.ValidationMessageFor(model => model.DownloadQuanity)
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.BalanceWeightUnitName)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.BalanceWeightUnitName)
+                        @Html.ValidationMessageFor(model => model.BalanceWeightUnitName)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.UnpublishProductWhenLovStock)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.UnpublishProductWhenLovStock)
+                        @Html.ValidationMessageFor(model => model.UnpublishProductWhenLovStock)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-3">
+                        @Html.NopLabelFor(model => model.UploadOrders)
+                    </div>
+                    <div class="col-md-9">
+                        @Html.NopEditorFor(model => model.UploadOrders)
+                        @Html.ValidationMessageFor(model => model.UploadOrders)
+                    </div>
+                </div>
+
+            </div>
+        </div>
+      
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="form-group">
+                    <div class="col-md-3">
+                        &nbsp;
+                    </div>
+                    <div class="col-md-9">
+                        <input type="submit" name="save" class="btn bg-blue" value="@T("Admin.Common.Save")" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
