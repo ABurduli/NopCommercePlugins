@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "d:\\My Projects\\Git\\NopCommercePlugins\\Nop3.9\\Nop.Plugin.DiscountRules.OnsePerNDay\\Nop.Plugin.DiscountRules.OnsePerNDay.csproj",
+  "TargetFramework": "v4.5.1",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}

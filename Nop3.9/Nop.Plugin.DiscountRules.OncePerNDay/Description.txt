@@ -1,0 +1,18 @@
+﻿Group: Discount requirements
+FriendlyName: Enable discount once per N days 
+<<<<<<< HEAD
+SystemName: DiscountRequirement.OncePerNDay
+=======
+SystemName: DiscountRequirement.OnsePerNDay
+>>>>>>> 3e9ab5c2c5d2eec3b8aa64b724a472e7bdda24aa
+Version: 1.0
+SupportedVersions: 3.90
+Author: Archil Burduli
+DisplayOrder: 1
+<<<<<<< HEAD
+FileName: Nop.Plugin.DiscountRules.OncePerNDay.dll
+Description: This plugin allows you to configure discounts for apply once per N Day
+=======
+FileName: Nop.Plugin.DiscountRules.OnsePerNDay.dll
+Description: This plugin allows you to configure discounts for apply once per N Day
+>>>>>>> 3e9ab5c2c5d2eec3b8aa64b724a472e7bdda24aa
