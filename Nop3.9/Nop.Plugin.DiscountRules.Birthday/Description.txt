@@ -1,0 +1,9 @@
+﻿Group: Discount requirements
+FriendlyName: Activate discount before and after specific days of birthday 
+SystemName: DiscountRequirement.Birthday
+Version: 1.0
+SupportedVersions: 3.90
+Author: Archil Burduli
+DisplayOrder: 1
+FileName: Nop.Plugin.DiscountRules.Birthday.dll
+Description: This plugin allows you to configure discounts for customers who have birthday
