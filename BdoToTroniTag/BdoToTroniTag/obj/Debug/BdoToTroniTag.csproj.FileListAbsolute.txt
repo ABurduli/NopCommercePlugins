@@ -1,0 +1,13 @@
+D:\My Projects\VS2017\WIN\BdoToTroniTag\BdoToTroniTag\bin\Debug\BdoToTroniTag.exe.config
+D:\My Projects\VS2017\WIN\BdoToTroniTag\BdoToTroniTag\bin\Debug\BdoToTroniTag.exe
+D:\My Projects\VS2017\WIN\BdoToTroniTag\BdoToTroniTag\bin\Debug\BdoToTroniTag.pdb
+D:\My Projects\VS2017\WIN\BdoToTroniTag\BdoToTroniTag\bin\Debug\BalanceLib.dll
+D:\My Projects\VS2017\WIN\BdoToTroniTag\BdoToTroniTag\bin\Debug\BalanceLib.pdb
+D:\My Projects\VS2017\WIN\BdoToTroniTag\BdoToTroniTag\obj\Debug\BdoToTroniTag.Form1.resources
+D:\My Projects\VS2017\WIN\BdoToTroniTag\BdoToTroniTag\obj\Debug\BdoToTroniTag.Properties.Resources.resources
+D:\My Projects\VS2017\WIN\BdoToTroniTag\BdoToTroniTag\obj\Debug\BdoToTroniTag.csproj.GenerateResource.Cache
+D:\My Projects\VS2017\WIN\BdoToTroniTag\BdoToTroniTag\obj\Debug\BdoToTroniTag.csproj.CoreCompileInputs.cache
+D:\My Projects\VS2017\WIN\BdoToTroniTag\BdoToTroniTag\obj\Debug\BdoToTroniTag.exe
+D:\My Projects\VS2017\WIN\BdoToTroniTag\BdoToTroniTag\obj\Debug\BdoToTroniTag.pdb
+D:\My Projects\VS2017\WIN\BdoToTroniTag\BdoToTroniTag\obj\Debug\BdoToTroniTag.csproj.CopyComplete
+D:\My Projects\VS2017\WIN\BdoToTroniTag\BdoToTroniTag\obj\Debug\BdoToTroniTag.csprojAssemblyReference.cache

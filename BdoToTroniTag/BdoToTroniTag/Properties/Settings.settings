@@ -1,0 +1,39 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BdoToTroniTag.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="BDOUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://dbsrv:8081/balance/hs/Exchange</Value>
+    </Setting>
+    <Setting Name="BDOUser" Type="System.String" Scope="User">
+      <Value Profile="(Default)">WebSU</Value>
+    </Setting>
+    <Setting Name="BDOPass" Type="System.String" Scope="User">
+      <Value Profile="(Default)">WebSU123456?</Value>
+    </Setting>
+    <Setting Name="OutputFTPUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ftp://192.168.10.10</Value>
+    </Setting>
+    <Setting Name="FTPUser" Type="System.String" Scope="User">
+      <Value Profile="(Default)">tronitag</Value>
+    </Setting>
+    <Setting Name="FTPPass" Type="System.String" Scope="User">
+      <Value Profile="(Default)">tronitag</Value>
+    </Setting>
+    <Setting Name="Folder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Import</Value>
+    </Setting>
+    <Setting Name="BDOGroupFilter" Type="System.String" Scope="User">
+      <Value Profile="(Default)">30615003-b242-11e7-841e-e0071b8a1d4f</Value>
+    </Setting>
+    <Setting Name="HEADER" Type="System.String" Scope="User">
+      <Value Profile="(Default)">barcode,name,description,price,unit,promotion,sizeunit,oldprice</Value>
+    </Setting>
+    <Setting Name="PriceDevider" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="DirectFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\main\Import</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
