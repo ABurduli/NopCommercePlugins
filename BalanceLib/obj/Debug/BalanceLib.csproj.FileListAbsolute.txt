@@ -1,0 +1,11 @@
+D:\My Projects\VS2017\WIN\BalanceSVCTest\BalanceLib\bin\Debug\BalanceLib.dll
+D:\My Projects\VS2017\WIN\BalanceSVCTest\BalanceLib\bin\Debug\BalanceLib.pdb
+D:\My Projects\VS2017\WIN\BalanceSVCTest\BalanceLib\obj\Debug\BalanceLib.csprojResolveAssemblyReference.cache
+D:\My Projects\VS2017\WIN\BalanceSVCTest\BalanceLib\obj\Debug\BalanceLib.dll
+D:\My Projects\VS2017\WIN\BalanceSVCTest\BalanceLib\obj\Debug\BalanceLib.pdb
+D:\My Projects\VS2017\WIN\BalanceSVCTest\BalanceSVCTest\BalanceLib\bin\Debug\BalanceLib.dll
+D:\My Projects\VS2017\WIN\BalanceSVCTest\BalanceSVCTest\BalanceLib\bin\Debug\BalanceLib.pdb
+D:\My Projects\VS2017\WIN\BalanceSVCTest\BalanceSVCTest\BalanceLib\obj\Debug\BalanceLib.csproj.CoreCompileInputs.cache
+D:\My Projects\VS2017\WIN\BalanceSVCTest\BalanceSVCTest\BalanceLib\obj\Debug\BalanceLib.dll
+D:\My Projects\VS2017\WIN\BalanceSVCTest\BalanceSVCTest\BalanceLib\obj\Debug\BalanceLib.pdb
+D:\My Projects\VS2017\WIN\BalanceSVCTest\BalanceSVCTest\BalanceLib\obj\Debug\BalanceLib.csprojAssemblyReference.cache

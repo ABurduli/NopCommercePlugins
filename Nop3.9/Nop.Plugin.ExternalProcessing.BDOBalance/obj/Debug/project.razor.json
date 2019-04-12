@@ -1,6 +1,6 @@
 {
-  "ProjectFilePath": "d:\\My Projects\\Git\\NopCommercePlugins\\Nop3.9\\Nop.Plugin.DiscountRules.OncePerNDay\\Nop.Plugin.DiscountRules.OncePerNDay.csproj",
-  "TargetFramework": "v4.5.1",
+  "ProjectFilePath": "d:\\My Projects\\Git\\NopCommercePlugins\\Nop3.9\\Nop.Plugin.ExternalProcessing.BDOBalance\\Nop.Plugin.ExternalProcessing.BDOBalance.csproj",
+  "TargetFramework": "v4.5.2",
   "TagHelpers": [],
   "Configuration": {
     "ConfigurationName": "UnsupportedRazor",
