@@ -1,0 +1,9 @@
+﻿Group: Discount requirements
+FriendlyName: Enable discount onse per N days 
+SystemName: DiscountRequirement.OnsePerNDay
+Version: 1.0
+SupportedVersions: 3.90
+Author: Archil Burduli
+DisplayOrder: 1
+FileName: Nop.Plugin.DiscountRules.OnsePerNDay.dll
+Description: This plugin allows you to configure discounts for apply onse per N Day
