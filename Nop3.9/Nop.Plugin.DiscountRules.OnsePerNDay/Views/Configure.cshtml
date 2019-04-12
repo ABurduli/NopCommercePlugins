@@ -1,7 +1,7 @@
 ﻿@{
     Layout = "";
 }
-@model Nop.Plugin.DiscountRules.OnsePerNDay.Models.RequirementModel
+@model Nop.Plugin.DiscountRules.OncePerNDay.Models.RequirementModel
 @using Nop.Web.Framework;
 
 <script type="text/javascript">
@@ -24,7 +24,7 @@
             $.ajax({
                 cache:false,
                 type: "POST",
-                url: "@(Url.Action("Configure", "DiscountRulesOnsePerNDay"))",
+                url: "@(Url.Action("Configure", "DiscountRulesOncePerNDay"))",
                 data: postData,
                 success: function (data) {
                     $('#pnl-save-requirement-result@(Model.RequirementId)').fadeIn("slow").delay(1000).fadeOut("slow");

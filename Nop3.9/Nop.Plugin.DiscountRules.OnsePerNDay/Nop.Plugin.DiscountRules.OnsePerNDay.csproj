@@ -7,8 +7,8 @@
     <ProjectGuid>{2636A384-D540-4097-B139-1BBAF1DED36D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Nop.Plugin.DiscountRules.OnsePerNDay</RootNamespace>
-    <AssemblyName>Nop.Plugin.DiscountRules.OnsePerNDay</AssemblyName>
+    <RootNamespace>Nop.Plugin.DiscountRules.OncePerNDay</RootNamespace>
+    <AssemblyName>Nop.Plugin.DiscountRules.OncePerNDay</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\Presentation\Nop.Web\Plugins\DiscountRules.OnsePerNDay\</OutputPath>
+    <OutputPath>..\..\Presentation\Nop.Web\Plugins\DiscountRules.OncePerNDay\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -25,7 +25,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\Presentation\Nop.Web\Plugins\DiscountRules.OnsePerNDay\</OutputPath>
+    <OutputPath>..\..\Presentation\Nop.Web\Plugins\DiscountRules.OncePerNDay\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -80,9 +80,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\DiscountRulesOnsePerNDayController.cs" />
+    <Compile Include="Controllers\DiscountRulesOncePerNDayController.cs" />
     <Compile Include="Models\RequirementModel.cs" />
-    <Compile Include="OnsePerNDayDiscountRequarementRule.cs" />
+    <Compile Include="OncePerNDayDiscountRequarementRule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RouteProvider.cs" />
   </ItemGroup>

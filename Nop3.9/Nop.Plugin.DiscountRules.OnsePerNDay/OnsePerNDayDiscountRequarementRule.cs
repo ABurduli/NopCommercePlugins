@@ -9,15 +9,15 @@ using Nop.Services.Common;
 using Nop.Services.Customers;
 using Nop.Services.Orders;
 
-namespace Nop.Plugin.DiscountRules.OnsePerNDay
+namespace Nop.Plugin.DiscountRules.OncePerNDay
 {
-    public class OnsePerNDayDiscountRequarementRule : BasePlugin, IDiscountRequirementRule
+    public class OncePerNDayDiscountRequarementRule : BasePlugin, IDiscountRequirementRule
     {
         private readonly ISettingService _settingService;
         private readonly IOrderService _orderService;
         private readonly IDiscountService _discountService;
 
-        public OnsePerNDayDiscountRequarementRule(ISettingService settingService,
+        public OncePerNDayDiscountRequarementRule(ISettingService settingService,
                                                     IOrderService orderService,
                                                     IDiscountService discountService)
         {
@@ -38,8 +38,8 @@ namespace Nop.Plugin.DiscountRules.OnsePerNDay
             if (request.Customer == null)
                 return result;
 
-            var daysDelta = _settingService.GetSettingByKey<int>(string.Format("DiscountRequirement.OnsePerNDay-{0}", request.DiscountRequirementId));
-            var discountID = _settingService.GetSettingByKey<int>(string.Format("DiscountRequirement.OnsePerNDayDiscountID-{0}", request.DiscountRequirementId));
+            var daysDelta = _settingService.GetSettingByKey<int>(string.Format("DiscountRequirement.OncePerNDay-{0}", request.DiscountRequirementId));
+            var discountID = _settingService.GetSettingByKey<int>(string.Format("DiscountRequirement.OncePerNDayDiscountID-{0}", request.DiscountRequirementId));
 
             if (discountID == 0)
                 return result;
@@ -66,7 +66,7 @@ namespace Nop.Plugin.DiscountRules.OnsePerNDay
         public string GetConfigurationUrl(int discountId, int? discountRequirementId)
         {
             //configured in RouteProvider.cs
-            string result = "Plugins/DiscountRulesOnsePerNDay/Configure/?discountId=" + discountId;
+            string result = "Plugins/DiscountRulesOncePerNDay/Configure/?discountId=" + discountId;
             if (discountRequirementId.HasValue)
                 result += string.Format("&discountRequirementId={0}", discountRequirementId.Value);
             return result;
@@ -75,14 +75,14 @@ namespace Nop.Plugin.DiscountRules.OnsePerNDay
         public override void Install()
         {
             //locales
-            this.AddOrUpdatePluginLocaleResource("Plugins.DiscountRules.OnsePerNDay.Fields.Days", "Days before use this discount next time");
+            this.AddOrUpdatePluginLocaleResource("Plugins.DiscountRules.OncePerNDay.Fields.Days", "Days before use this discount next time");
             base.Install();
         }
 
         public override void Uninstall()
         {
             //locales
-            this.DeletePluginLocaleResource("Plugins.DiscountRules.OnsePerNDay.Fields.Days");
+            this.DeletePluginLocaleResource("Plugins.DiscountRules.OncePerNDay.Fields.Days");
             base.Uninstall();
         }
     }

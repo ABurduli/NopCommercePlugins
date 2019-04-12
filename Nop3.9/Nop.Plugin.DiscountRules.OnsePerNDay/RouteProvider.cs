@@ -2,7 +2,7 @@
 using System.Web.Routing;
 using Nop.Web.Framework.Mvc.Routes;
 
-namespace Nop.Plugin.DiscountRules.OnsePerNDay
+namespace Nop.Plugin.DiscountRules.OncePerNDay
 {
     public class RouteProvider : IRouteProvider
     {
@@ -16,10 +16,10 @@ namespace Nop.Plugin.DiscountRules.OnsePerNDay
 
         public void RegisterRoutes(RouteCollection routes)
         {
-            routes.MapRoute("Plugin.DiscountRules.OnsePerNDay.Configure",
-                "Plugins/DiscountRulesOnsePerNDay/Configure",
-                new { controller = "DiscountRulesOnsePerNDay", action = "Configure" },
-                new[] { "Nop.Plugin.DiscountRules.OnsePerNDay.Controllers" }
+            routes.MapRoute("Plugin.DiscountRules.OncePerNDay.Configure",
+                "Plugins/DiscountRulesOncePerNDay/Configure",
+                new { controller = "DiscountRulesOncePerNDay", action = "Configure" },
+                new[] { "Nop.Plugin.DiscountRules.OncePerNDay.Controllers" }
            );
         }
     }
